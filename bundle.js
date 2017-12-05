@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function(){
   const GRID_ROWS = 15;
   const fps = 32;
   const map = __WEBPACK_IMPORTED_MODULE_0__track_map__["a" /* default */];
-  var startingPosX1;
-  var startingPosX2;
+  var startingPosX1, startingPosY1;
+  var startingPosX2, startingPosY2;
 
 
   function rowColToIndex(row, col) {
@@ -103,12 +103,14 @@ document.addEventListener("DOMContentLoaded", function(){
             GRID_W - GRID_GAP, GRID_W - GRID_GAP
           );
         }
-        // else if (map[index] === 21) {
-        //   startingPosX1 = row * GRID_W;
-        // }
-        // else if (map[index] === 22) {
-        //   startingPosX2 = row * GRID_W;
-        // }
+        else if (map[index] === 21) {
+          startingPosX1 = col * GRID_W;
+          startingPosY1 = row * GRID_H;
+        }
+        else if (map[index] === 22) {
+          startingPosX2 = col * GRID_W;
+          startingPosY2 = row * GRID_H;
+        }
       }
     }
   }
@@ -118,12 +120,12 @@ document.addEventListener("DOMContentLoaded", function(){
     var car2 = new Image();
 
     car1.onload = function () {
-      ctx.drawImage(car1, 280 + car1.width, 450 + car1.height);
+      ctx.drawImage(car1, startingPosX1, startingPosY1);
     };
     car1.src = "./assets/car1.png";
 
     car2.onload = function() {
-      ctx.drawImage(car2, 280 + car2.width, 490 + car2.height);
+      ctx.drawImage(car2, startingPosX2, startingPosY2);
     };
 
     car2.src = "./assets/car2.png";
