@@ -83,6 +83,9 @@ document.addEventListener("DOMContentLoaded", function(){
   const GRID_ROWS = 15;
   const fps = 32;
   const map = __WEBPACK_IMPORTED_MODULE_0__track_map__["a" /* default */];
+  var startingPos1;
+  var startingPos2;
+
 
   function rowColToIndex(row, col) {
     return col + GRID_COLS * row;
@@ -100,13 +103,34 @@ document.addEventListener("DOMContentLoaded", function(){
             GRID_W - GRID_GAP, GRID_W - GRID_GAP
           );
         }
+        else if (map[index] === 21) {
+          // startingPos1 = (col*)
+        }
       }
     }
   }
 
+  function drawCar() {
+    var car1 = new Image();
+    var car2 = new Image();
+
+    car1.onload = function () {
+      ctx.drawImage(car1, car1.width/2, car1.height/2);
+    };
+    car1.src = "./assets/car1.png";
+
+    car2.onload = function() {
+      ctx.drawImage(car2, 200, 200);
+    };
+
+    car2.src = "./assets/car2.png";
+  }
+
   function drawAll() {
     ctx.fillStyle ="black";
-    ctx.fillRect(0,0,canvas.width, canvas.height);
+    ctx.fillRect(0,0, canvas.width, canvas.height);
+
+    drawCar();
     drawTracks();
   }
 
@@ -132,12 +156,15 @@ const trackMap = [
   1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1,
   1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1,
   1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-  1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+  1, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+  1, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
   1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 ];
 
 /* harmony default export */ __webpack_exports__["a"] = (trackMap);
+
+// 1 - basic tile
+// 2 - car starting pos
 
 
 /***/ })
