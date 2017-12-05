@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function(){
   const GRID_ROWS = 15;
   const fps = 32;
   const map = __WEBPACK_IMPORTED_MODULE_0__track_map__["a" /* default */];
-  var startingPos1;
-  var startingPos2;
+  var startingPosX1;
+  var startingPosX2;
 
 
   function rowColToIndex(row, col) {
@@ -103,9 +103,12 @@ document.addEventListener("DOMContentLoaded", function(){
             GRID_W - GRID_GAP, GRID_W - GRID_GAP
           );
         }
-        else if (map[index] === 21) {
-          // startingPos1 = (col*)
-        }
+        // else if (map[index] === 21) {
+        //   startingPosX1 = row * GRID_W;
+        // }
+        // else if (map[index] === 22) {
+        //   startingPosX2 = row * GRID_W;
+        // }
       }
     }
   }
@@ -115,12 +118,12 @@ document.addEventListener("DOMContentLoaded", function(){
     var car2 = new Image();
 
     car1.onload = function () {
-      ctx.drawImage(car1, car1.width/2, car1.height/2);
+      ctx.drawImage(car1, 280 + car1.width, 450 + car1.height);
     };
     car1.src = "./assets/car1.png";
 
     car2.onload = function() {
-      ctx.drawImage(car2, 200, 200);
+      ctx.drawImage(car2, 280 + car2.width, 490 + car2.height);
     };
 
     car2.src = "./assets/car2.png";
