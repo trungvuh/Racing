@@ -6,20 +6,20 @@ A multiplayer car racing experience.
 
 Racers can race each other on multiple laps. One controls the car with the arrow keys, the other will use "WASD" keys.
 
-##Timeline:
+## Timeline:
 
-* Day 1:
+* **Day 1:**
   + Basic setup, layout, track grid.
 
-* Day 2:
+* **Day 2:**
   + Car setup, get the cars running. Handle collision.
 
-* Day 3:
+* **Day 3:**
   + Graphic. Lay out different tiles.
 
-* Day 4:
+* **Day 4:**
   + Audio and track/ lap record.
 
-* Day 5:
+* **Day 5:**
   + Welcome page
   + Finishing up.
