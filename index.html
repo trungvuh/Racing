@@ -3,11 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Racing Car</title>
+
   </head>
 
   <body>
+    <audio id="audio1"></audio>
+    <input type="hidden" id="audioFile" value="./audio/crowd_1.mp3" size="60" />
+
+    <button id="playbutton" onclick="togglePlay()">Play</button>
+
     <canvas
-      id="myCanvas" width="1200" height="720"></canvas>
+      id="myCanvas" width="1200" height="720">
+    </canvas>
 
     <script type="application/javascript" src="./lib/key_handler.js"></script>
 
