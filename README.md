@@ -1,25 +1,13 @@
 # Racing Car
 
-A multiplayer car racing experience.
+A multiplayers car racing experience.
 
-![](https://github.com/trungvuh/Racing/raw/master/assets/Racing%20Wireframe.png)
+The game was made with arcade-style mindset, so there will be no mouse movement control, only keyboards. Sorry for the inconvenience, but I hope it brings back the sweet childhood memory.
 
-Racers can race each other on multiple laps. One controls the car with the arrow keys, the other will use "WASD" keys.
+![](https://res.cloudinary.com/trungvuh/image/upload/c_scale,w_600/v1512752524/Racing_ss_zfc90x.png)
 
-## Timeline:
+Racers can race each other on multiple laps. One controls the car with arrow keys, the other uses "WASD" keys.
 
-* **Day 1:**
-  + Basic setup, layout, track grid.
+Note: Grass/ Sand is passable, though it will slow the car down and racer loses control of the car.
 
-* **Day 2:**
-  + Car setup, get the cars running. Handle collision.
-
-* **Day 3:**
-  + Graphic. Lay out different tiles.
-
-* **Day 4:**
-  + Audio and track/ lap record.
-
-* **Day 5:**
-  + Welcome page
-  + Finishing up.
+Hidden feature: press "Q" or "/" for honk.
