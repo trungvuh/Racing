@@ -1,5 +1,7 @@
 # Racing Car
 
+## [Live Demo](https://trungvuh.github.io/Racing/)
+
 A multiplayers car racing experience. Built entirely on JavaScript and HTML5.
 
 The game was made with arcade-style mindset, so there will be no mouse movement control, only keyboards. Sorry for the inconvenience, but I hope it brings back the sweet childhood memory.
