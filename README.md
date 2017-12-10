@@ -12,6 +12,9 @@ The game was made with arcade-style mindset, so there will be no mouse movement 
 
 Racers can race each other on multiple laps. One controls the car with arrow keys, the other uses "WASD" keys.
 
-**Note:** Grass/ Sand is passable, though it will slow the car down and racer loses control of the car.
+**Note:**
+
+  * Grass/ Sand is passable, though it will slow the car down and racer loses control of the car.
+  * To avoid racers short-cut the race, hidden check points have been placed throughout the track. Passing the finish line without passing all the check points will not result in completing a lap.
 
 **Hidden feature:** press "Q" or "/" for honk.
